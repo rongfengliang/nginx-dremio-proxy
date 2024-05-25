@@ -8,7 +8,7 @@ services:
       - ./nginx.conf:/etc/nginx/nginx.conf
   dremio:
     image: dremio/dremio-oss:25.0
-    volumes:
-      - ./ui/dremio-dac-ui-25.0.0-202404051521110861-ed9515a8.jar:/opt/dremio/jars/dremio-dac-ui-25.0.0-202404051521110861-ed9515a8.jar
+    # volumes:
+      # - ./ui/dremio-dac-ui-25.0.0-202404051521110861-ed9515a8.jar:/opt/dremio/jars/dremio-dac-ui-25.0.0-202404051521110861-ed9515a8.jar
     ports:
       - 9047:9047
